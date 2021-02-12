@@ -13,7 +13,7 @@ class Duck extends Migration
      */
     public function up()
     {
-        Schema::create('duck', function (Blueprint $table){
+        Schema::create('ducks', function (Blueprint $table){
            $table->id();
            $table->string('duckName');
            $table->string('duckBreed');
@@ -28,6 +28,6 @@ class Duck extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('duck');
+        Schema::dropIfExists('ducks');
     }
 }
